@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+   
+</head>
+<body>
+    <div></div>
+    <h1>Calculadora</h1>
+    <h2>Trabalho Prático UC - Desenvolvimento WEB</h2>
+    <h3>Aluno: Kelvyn Amaral Candido</h3>
+    <div class="calculadora">
+        
+        <div id="display" class="display">
+            <p id="memory"></p>
+            <p id="result"></p>
+        </div>
+        <div class="buttons">
+            <!-- Primeira linha de botões -->
+            <div class="row">
+                <button class="button operator" value="C">C</button>
+                <button class="button operator" value="CE">CE</button>
+                <button class="button operator" value="/">/</button>
+            </div>
+            <!-- Segunda linha de botões -->
+            <div class="row">
+                <button class="button" value="7">7</button>
+                <button class="button" value="8">8</button>
+                <button class="button" value="9">9</button>
+                <button class="button operator" value="*">*</button>
+            </div>
+            <!-- Terceira linha de botões -->
+            <div class="row">
+                <button class="button" value="4">4</button>
+                <button class="button" value="5">5</button>
+                <button class="button" value="6">6</button>
+                <button class="button operator" value="-">-</button>
+            </div>
+            <!-- Quarta linha de botões -->
+            <div class="row">
+                <button class="button" value="1">1</button>
+                <button class="button" value="2">2</button>
+                <button class="button" value="3">3</button>
+                <button class="button operator" value="+">+</button>
+            </div>
+            <!-- Quinta linha de botões -->
+            <div class="row">
+                <button class="button" value="0">0</button>
+                <button class="button" value=".">.</button>
+                <button id="equal" class="button operator" value="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/calculadora.js"></script>
+</body>
+</html>
