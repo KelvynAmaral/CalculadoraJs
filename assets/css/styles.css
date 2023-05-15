@@ -126,19 +126,13 @@ body::before {
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
-  top: 0;
-  right: 1;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 200px;
   height: 200px;
-  
 }
-/* Responsividade para 1024px */
-@media (max-width: 1024px) {
-  body::before  {
-    display: none;
-  }
-  
-
+ 
 /* Responsividade para 720px */
 @media (max-width: 720px) {
   .calculadora {
@@ -150,7 +144,6 @@ body::before {
       padding: 10px;
   }
 }
-
 
 /* Responsividade para 500px */
 @media (max-width: 500px) {
@@ -171,5 +164,4 @@ body::before {
   h2 {
     display: none;
   }
-}
 }
