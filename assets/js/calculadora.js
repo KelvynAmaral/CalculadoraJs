@@ -75,3 +75,39 @@ function calcular() {
   }
   visorMemoria.innerText = memoria;
 }
+// Adiciona evento de escuta de teclado ao documento
+document.addEventListener('keydown', (event) => {
+  const tecla = event.key;
+
+  // Verifica qual tecla foi pressionada e executa a ação correspondente
+  switch (tecla) {
+    case '0':
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+    case '7':
+    case '8':
+    case '9':
+    case '+':
+    case '-':
+    case '*':
+    case '/':
+    case '.':
+      adicionarAoVisor(tecla);
+      break;
+    case 'Enter':
+      calcular();
+      break;
+    case 'Backspace':
+      limparEntrada();
+      break;
+    case 'Escape':
+      limparVisor();
+      break;
+    default:
+      break;
+  }
+});
